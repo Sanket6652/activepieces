@@ -60,7 +60,7 @@ export async function apiRequest({
 export const userFolderDropdown = Property.Dropdown({
   displayName: 'Folder ID',
   description: 'ID of the folder to add the video to',
-  required: false,
+  required: true,
   refreshers: [],
   options: async ({ auth }) => {
     const response = await apiRequest({
